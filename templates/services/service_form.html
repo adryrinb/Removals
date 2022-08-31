@@ -7,7 +7,7 @@
 
 {% block booking %}
 <section id="formulario">
-  <h1 class="text-center pt-3">GET YOUR ESTIMATE NOW!</h1>
+  <h1 class="text-center pt-3 zurich">GET YOUR ESTIMATE NOW!</h1>
   <div class="container">
     {% if alertSuccess %}
     <div class="alert alert-success alert-dismissible fade show">
@@ -15,7 +15,7 @@
       {{ alertSuccess }}
     </div>
     {% endif %}
-    <form method="POST" class="row m-2" id="bookingForm">
+    <form method="POST" class="row" id="bookingForm">
       {% csrf_token %}
 
       {{ formClient.non_field_errors }}
@@ -89,11 +89,11 @@
       </div>
       <div class="col-md-6">
         <!-- Button to Open the Modal -->
-        <button type="button" class="btn-send fs-4 fw-bold" data-bs-toggle="modal" data-bs-target="#inventory">
+        <button type="button" class="btn-send col-md-12 d-grid fs-4 fw-bold" data-bs-toggle="modal" data-bs-target="#inventory">
           Enter Inventory
         </button>
       </div>
-      <button id="color-input" class="text-center text-decoration-none btn-send col-md-12 fs-5 mt-3" type="submit">Get yor Quote</button>
+      <button id="color-input" class="text-center text-decoration-none btn-send col-md-12 fs-5 mt-3 zurich" type="submit">Get your Quote</button>
     </form>
   </div>
 </section>

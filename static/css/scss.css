@@ -59,28 +59,28 @@ body{
 }
 .description {
   font-family: Zurich_XCn_BT;
-  text-align: justify !important;
+  text-align: justify;
 }
 .heading{
     padding-bottom:99px;
     text-align: center;
 }
-.heading h2{
+.heading h1{
     position: relative;
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
     color: #da2228;
 }
-.heading h2::before,
-.heading h2::after{
+.heading h1::before,
+.heading h1::after{
     content: "";
     background: #2B4F7B;
     display: inline-block;
     width: 50px;
     height: 2px;
 }
-.heading h2::before{
+.heading h1::before{
     margin:0 15px 10px 0;
 }
 ::after{
@@ -130,13 +130,11 @@ body{
  }
 .row .icon{
     margin: 0 auto 20px auto;
-    /* padding-top: 10px; */
     display: inline-block;
     text-align: center;
     border-radius: 50%;
     background:#2B4F7B ;    
-    width: 60px;
-    /* height: 60px;  */   
+    width: 60px;    
     transition: all 0,3s ease-in-out;
 }
 .row .icon1{
@@ -154,8 +152,7 @@ body{
     color: #ffff;
 }
 .row .title{
-    font-size: 18px;
-    /* font-weight: 700; */
+    font-size: 18px;    
     margin-bottom: 15px;
     transition: 0,5s ease-in-out;
     color: #da2228;
@@ -258,38 +255,26 @@ color: #2B4F7B;
 
 /* *************========Media QUerys======**********/
 
-@media (min-width:320px)and (max-width:480px){
-  .zurich{
-    font-family:Zurich_XCn_BT;
-  }
-  /* #service {
-    padding-top: 0px;
-  } */
-}
-
-
 @media (max-width:576px){
+  
   #header-nav img {
       max-width:100% !important;
+  }
+  .carousel{
+    height: 100%;
   }
   .carousel-caption{
       display: none;
   }
   .carousel-inner{
-      max-height: 20rem;
-      margin-top: 2rem;
+      max-height: 20rem !important;
+      margin-top: 0rem;
+  }  
+  #service{
+    padding-top: 0px;
   }
-  .carousel{
-      height: 100%;
-  }
-  #service {
-    padding-top: 0px !important;
-  }
-  .title{
-      font-size: 2rem !important;
-  }
-  .description{
-      font-size: 1rem !important;
+  .heading{
+    padding-bottom: 25px;
   }
   #servicio{
       margin: 0;
@@ -303,12 +288,11 @@ color: #2B4F7B;
   #logo-footer{
       display: none;
   }
-  .row .description{
-    font-size: 25px !important;
-  }
+  
 }
 
 @media (max-width:768px){
+
     #header-nav img {
         max-width:100% !important;
     }
@@ -317,11 +301,7 @@ color: #2B4F7B;
     }
     #quote{
         display:none;
-    }
-   
-   /*  #main-carousel {
-      max-height: 50% !important;
-  } */
+    }   
     .carousel-item{
         margin-top: 4rem;
     }
@@ -336,7 +316,7 @@ color: #2B4F7B;
       font-size: larger;
       margin: 0 auto;
     } 
-    .heading h2{
+    .heading h1{
       font-size: 40px;
     }
     .heading h2::before{
@@ -344,10 +324,7 @@ color: #2B4F7B;
     }
     .heading h2::after{
       width: 60px;
-    }
-    .row .description{
-      font-size: 35px !important;
-    }
+    }    
     #servicio{
       margin: 0;
       padding: 0;
@@ -413,8 +390,7 @@ color: #2B4F7B;
   }
   
   .title-form {
-    color: #2B4F7B;
-    /* font-weight: 500; */
+    color: #2B4F7B;    
     font-size: 1.5rem;
     font-family: impact;
     line-height: 1;
@@ -435,8 +411,7 @@ color: #2B4F7B;
     border: 2px solid #fafafa;
     background: none;
     padding: 0.6rem 1.2rem;
-    color: #fff;
-    /* font-weight: 500; */
+    color: #fff;    
     font-size: 0.95rem;
     letter-spacing: 0.5px;
     border-radius: 25px;
@@ -461,8 +436,7 @@ color: #2B4F7B;
     transform: translateY(-50%);
     padding: 0 0.4rem;
     color: #fafafa;
-    font-size: 1.2rem;
-    /* font-weight: 400; */
+    font-size: 1.2rem;    
     pointer-events: none;
     z-index: 1000;
     transition: 0.5s;
@@ -646,9 +620,9 @@ color: #2B4F7B;
   }
   
   @media (max-width: 480px) {
-    .container {
+    /* .container {
       padding: 1.5rem;
-    }
+    } */
   
     .contact-info:before {
       display: none;
