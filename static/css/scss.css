@@ -258,6 +258,56 @@ color: #2B4F7B;
 
 /* *************========Media QUerys======**********/
 
+@media (min-width:320px)and (max-width:480px){
+  .zurich{
+    font-family:Zurich_XCn_BT;
+  }
+  /* #service {
+    padding-top: 0px;
+  } */
+}
+
+
+@media (max-width:576px){
+  #header-nav img {
+      max-width:100% !important;
+  }
+  .carousel-caption{
+      display: none;
+  }
+  .carousel-inner{
+      max-height: 20rem;
+      margin-top: 2rem;
+  }
+  .carousel{
+      height: 100%;
+  }
+  #service {
+    padding-top: 0px !important;
+  }
+  .title{
+      font-size: 2rem !important;
+  }
+  .description{
+      font-size: 1rem !important;
+  }
+  #servicio{
+      margin: 0;
+      padding: 0;
+  }
+  #equipo{
+    max-width: 100% ;
+    text-align: center !important ;
+    margin-left: 2px !important;
+  }
+  #logo-footer{
+      display: none;
+  }
+  .row .description{
+    font-size: 25px !important;
+  }
+}
+
 @media (max-width:768px){
     #header-nav img {
         max-width:100% !important;
@@ -309,46 +359,7 @@ color: #2B4F7B;
       display: none;
     }
 }
-@media (max-width:576px){
-    #header-nav img {
-        max-width:100% !important;
-    }
-    /* .icono-wrap{
-        flex-wrap:wrap;
-        justify-content:center !important; 
-    } */   
-    .carousel-caption{
-        display: none;
-    }
-    .carousel-inner{
-        max-height: 20rem;
-        margin-top: 4rem;
-    }
-    .carousel{
-        height: 100%;
-    }
-    .title{
-        font-size: 2rem !important;
-    }
-    .description{
-        font-size: 1rem !important;
-    }
-    #servicio{
-        margin: 0;
-        padding: 0;
-    }
-    #equipo{
-      max-width: 100% ;
-      text-align: center !important ;
-      margin-left: 2px !important;
-    }
-    #logo-footer{
-        display: none;
-    }
-    .row .description{
-      font-size: 25px !important;
-    }
-}
+
 
 /* ===========stilos del contacto del footer============ */
 
